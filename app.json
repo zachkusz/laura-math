@@ -1,0 +1,8 @@
+{
+"name": "Srta Blasena",
+"description": "Random math questions for srta Blasena's class",
+"repository": "https://github.com/zachkusz/laura-math.git",
+"logo": "http://node-js-sample-herokuapp.com/node.svg",
+"keywords": ["angular", "math"],
+"image": "heroku/nodejs"
+}
