@@ -1,0 +1,13 @@
+<div class="border">
+  <div class="row">
+    <h5 class="twelve columns">Question {{selectedQuestion.num}}: {{selectedQuestion.question}}</h5>
+  </div>
+</div>
+
+<div class="row">
+  <button class="five columns" ng-click="newQuestion()">Random Question</button>
+  <button class="five columns offset-by-two" ng-show="timer == 0" ng-click="showAnswer()">See the answer</button>
+</div>
+<div class="row border">
+  <p class="twelve columns" ng-if="seeAnswer">Answer: {{selectedQuestion.answer}}</p>
+</div>

@@ -1,0 +1,23 @@
+.shrink {
+    border: 20px solid black;
+    padding: 100px;
+}
+.border {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+h3, h4, h5, h6, p {
+    text-align: center;
+}
+.img-container {
+    position: relative;
+}
+.img-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1080px;
+    width: 100%;
+    opacity: 0.3;
+}

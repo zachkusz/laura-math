@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Math!</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/skeleton.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Angular -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script type="text/javascript" src="/scripts/mathApp.js"></script>
+    <script type="text/javascript" src="/scripts/realLifeProblemsController.js"></script>
+</head>
+
+<body ng-app="mathApp">
+  <div class="img-container">
+    <img src="../styles/blue.jpg">
+    <div class="container" class="shrink">
+
+      <div class="row">
+        <h3 class="twelve columns">Srta. Blasena's Math Site</h3>
+      </div>
+      <main ng-view></main>
+
+    </div>
+  </div>
+</body>
+</html>
