@@ -1,0 +1,61 @@
+<h3>editor!<h3>
+<h5>Questions for Real-Life-Problems</h5>
+<form class="border">
+    
+    <div class="row">
+        <div class="three columns offset-by-three">
+            <label>Difficulty</label>
+            <select ng-model="newQuestion.difficulty">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select>
+        </div>
+        <div class="six columns">
+            <label>Question #</label>
+            <input type="number" ng-model="newQuestion.num">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <label>Question</label>
+            <input type="text" ng-model="newQuestion.question">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <label>Answer</label>
+            <input type="text" ng-model="newQuestion.answer">
+        </div>
+    </div>
+
+    <label>Picture URL</label>
+    <input type="text" ng-model="newQuestion.pic">
+    <button ng-click="postRealLife()">Submit</button>
+</form>
+<!--
+<table>
+    <tr>
+        <th>#</th>
+        <th>Question</th>
+        <th>Answer</th>
+        <th>Difficulty</th>
+        <th>Picture Url</th>
+    </tr>
+    <tr ng-repeat="q in questions">
+        <td>{{q.num}}</td>
+        <td><input type="text">{{q.question}}</input></td>
+        <td><input type="text">{{q.answer}}</input></td>
+        <td>
+            <select option="q.difficulty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </td>
+        <td><input type="text">{{q.pic}}</input></td>
+    </tr>
+</table>
+-->

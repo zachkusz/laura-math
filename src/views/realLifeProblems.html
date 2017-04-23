@@ -5,7 +5,7 @@
 </div>
 
 <div class="row">
-  <button class="five columns" ng-click="newQuestion()">Random Question</button>
+  <button class="five columns" ng-disabled="questionsList.length < 0" ng-click="newQuestion()">Random Question</button>
   <button class="five columns offset-by-two" ng-show="timer == 0" ng-click="showAnswer()">See the answer</button>
 </div>
 <div class="row border">

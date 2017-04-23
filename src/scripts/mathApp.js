@@ -2,13 +2,17 @@ var mathApp = angular.module('mathApp', ['ngRoute']);
 
 mathApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/', {
+    .when('/realLifeProblems', {
       templateUrl: '/views/realLifeProblems.html',
       controller: "RealLifeProblemsController"
     })
-   /*.otherwise({
-      redirectTo: 'four04',
-      templateUrl: '../views/four04.html',
-      controller: "Four04Controller"
-		})*/
+    .when('/editor', {
+      templateUrl: '/views/editor.html',
+      controller: "EditorController"
+    })
+   .otherwise({
+      redirectTo: '/realLifeProblems',
+      templateUrl: '/views/realLifeProblems.html',
+      controller: "RealLifeProblemsController"
+		})
 }]);
