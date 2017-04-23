@@ -39,11 +39,11 @@ function finalCountdown(question) {
 
 function determineTimer(question) {
   if (question.difficulty >= 3) {
-    $scope.timer = 4;
+    $scope.timer = 90;
   } else if (question.difficulty == 2) {
-    $scope.timer = 3;
+    $scope.timer = 60;
   } else if (question.difficulty <= 1) {
-    $scope.timer = 2;
+    $scope.timer = 30;
   } else {
     $scope.timer = 60;
   }

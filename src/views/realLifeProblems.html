@@ -1,13 +1,16 @@
 <div class="border">
   <div class="row">
-    <h5 class="twelve columns">Question {{selectedQuestion.num}}: {{selectedQuestion.question}}</h5>
+    <h5 class="twelve columns">Pregunta {{selectedQuestion.num}}: {{selectedQuestion.question}}</h5>
   </div>
 </div>
 
 <div class="row">
-  <button class="five columns" ng-disabled="questionsList.length < 0" ng-click="newQuestion()">Random Question</button>
-  <button class="five columns offset-by-two" ng-show="timer == 0" ng-click="showAnswer()">See the answer</button>
+  <!--new random question-->
+  <button class="five columns" ng-disabled="questionsList.length < 0" ng-click="newQuestion()">Nueva Pregunta</button>
+  <!--see the answer-->
+  <button class="five columns offset-by-two" ng-show="timer == 0" ng-click="showAnswer()">Mira la Respuesta</button>
 </div>
 <div class="row border">
-  <p class="twelve columns" ng-if="seeAnswer">Answer: {{selectedQuestion.answer}}</p>
+  <!--answer-->
+  <p class="twelve columns" ng-if="seeAnswer">Respuesta: {{selectedQuestion.answer}}</p>
 </div>
